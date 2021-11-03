@@ -1,5 +1,5 @@
 
-//import JNI.TimberSawJNI;
+package com.github.jni.timbersawjni;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
