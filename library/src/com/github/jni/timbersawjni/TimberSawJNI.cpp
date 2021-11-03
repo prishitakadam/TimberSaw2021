@@ -1,7 +1,7 @@
 
 #include <jni.h>
 #include <iostream>
-#include "JNI_TimberSawJNI.h"
+#include "com_github_jni_timbersawjni_TimberSawJNI.h"
 
 #include "TimberSaw/db.h"
 #include "TimberSaw/cache.h"
