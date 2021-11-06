@@ -17,7 +17,7 @@ g++ --std=c++11 -fpic -I. -I/usr/lib/jvm/java-1.11.0-openjdk-amd64/include -I/us
 ```
 (Change path accordingly)
 
-## Creating executble JAR file
+## Creating executble JAR file (According to package)
 ```bash
 jar cvfe TimberSawJNI.jar com.github.jni.timbersawjni.TimberSawJNI com/github/jni/timbersawjni/*.class
 ```
