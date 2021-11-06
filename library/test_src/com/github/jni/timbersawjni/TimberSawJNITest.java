@@ -1,29 +1,29 @@
 
 package com.github.jni.timbersawjni;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
 
 import java.io.File;
 import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.*;
 
 class TimberSawJNITest {
 
     private TimberSawJNI db;
     private File dbDir;
 
-    @BeforeEach
+    @Before
     void setUp() {
         dbDir = new File("testDb");
         db = new TimberSawJNI(dbDir, null);
         assertNotNull(db);
     }
 
-    @AfterEach
+    @After
     void tearDown() {
         if (db != null) {
             db.close();
